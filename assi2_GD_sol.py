@@ -134,7 +134,6 @@ while mag(df) > epsilon:
         dphi = numerical_derivative(phi , etta)
         d2phi = numerical_second_derivative(phi , etta)
         etta = etta - dphi/d2phi
-        print(dphi)
         magnitude_SD = abs (dphi)
     x_old = x_new(etta)
     print (f"for the {iter} iteration we got etta : {etta}, with derivative magnitude :{dphi} , giving point {x_new(etta)} ")
